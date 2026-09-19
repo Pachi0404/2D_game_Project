@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
             transform.position, 
             Vector2.down,
             out RaycastHit hit,
-            0.1f);
+            5f);
 
         if (hit.collider != null && hit.collider.CompareTag("Ground"))
         {
